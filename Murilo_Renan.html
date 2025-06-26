@@ -2,7 +2,11 @@
 <html>
 <head>
 <style>
- 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -42,19 +46,15 @@
       .grid-container {
         grid-template-columns: auto auto;
         grid-template-areas:
-          "item1"
-          "item2"
-          "item3"
-          "item5";
-      }
-      .item4{
-        display: none;
+          "item1 item1"
+          "item2 item2"
+          "item3 item3"
+          "item5 item5";
       }
 }
 </style>
 </head>
 <body>
-
 <div class="grid-container">
   <div class="item1">cabeçalho</div>
   <div class="item2">menu</div>
@@ -62,5 +62,6 @@
   <div class="item4">Aside</div>
   <div class="item5">rodape</div>
 </div>
+link github: "https://github.com/renan49zk/atividadegrid"
 </body>
 </html>
